@@ -1,15 +1,12 @@
-var logical = false;
-
-console.log("run mytests", logical);
-
 var mytest = {
-
+  logical = false,
   set: function(value) {
     this.logical = value;
-
+    console.log('in set', this.logical);
   },
   get: function() {
-    return logical;
+    console.log('in get', this.logical);
+    return this.logical;
   }
 
 }
