@@ -1,5 +1,5 @@
 var mytest = {
-  logical = false,
+  logical: false,
   set: function(value) {
     this.logical = value;
     console.log('in set', this.logical);
